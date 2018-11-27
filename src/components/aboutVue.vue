@@ -17,7 +17,7 @@
         .card-title(slot="header") 事件绑定
         eventExample
       el-card(shadow="hover")
-        .card-title(slot="header") axior请求
+        .card-title(slot="header") ajax请求
         sendAjax
     el-col(:span="10")
       el-card(shadow="hover")

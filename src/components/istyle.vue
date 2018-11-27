@@ -2,8 +2,7 @@
 </style>
 
 <template lang="pug">
-.container
-  
+.container nothing
 </template>
 
 <script>

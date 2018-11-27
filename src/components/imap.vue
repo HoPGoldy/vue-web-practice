@@ -27,7 +27,7 @@ export default {
     this.map.on('click', e => {
       popup
         .setLatLng(e.latlng)
-        .setContent("你点击了 " + e.latlng.toString())
+        .setContent('你点击了 ' + e.latlng.toString())
         .openOn(this.map)
     })
   }

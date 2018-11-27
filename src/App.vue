@@ -17,7 +17,7 @@
     width 300px
     font-size 30px
 .logo
-  position absolute 
+  position absolute
   z-index -1
   left calc(50% - 100px)
   top -30px
@@ -62,4 +62,3 @@ export default {
   components: { detail, chart, aboutVue, imap, istyle }
 }
 </script>
-

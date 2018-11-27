@@ -16,6 +16,9 @@ module.exports = {
     'standard'
   ],
   // required to lint *.vue files
+  "globals": {
+    "L": true
+  },
   plugins: [
     'vue'
   ],
