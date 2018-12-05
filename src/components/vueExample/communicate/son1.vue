@@ -5,7 +5,7 @@
 .container
   el-input(v-model="sonInput")
     template(slot="prepend") 向父组件发送消息
-    el-button(slot="append", icon="el-icon-d-arrow-right", @click="$emit('speak', sonInput)")
+    el-button(slot="append" icon="el-icon-d-arrow-right" @click="$emit('speak', sonInput)")
 </template>
 
 <script>

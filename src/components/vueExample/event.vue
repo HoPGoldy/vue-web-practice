@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    el-button(@click="addNum", style="margin-right:20px;") 点此加一
+    el-button(@click="addNum" style="margin-right:20px;") 点此加一
     span 按钮被点击了{{num}}次
 </template>
 

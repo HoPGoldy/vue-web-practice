@@ -6,9 +6,9 @@
 
 <template lang="pug">
 .container
-  el-input(v-model="urlInput", placeholder="请输入地址")
+  el-input(v-model="urlInput" placeholder="请输入地址")
     template(slot="prepend") 地址
-  el-input(v-model="argInput", placeholder="请输入参数")
+  el-input(v-model="argInput" placeholder="请输入参数")
     template(slot="prepend") 参数
   el-button(@click="getMsg") 提交请求
 </template>

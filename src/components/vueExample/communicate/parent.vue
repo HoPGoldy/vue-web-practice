@@ -6,10 +6,10 @@
 
 <template lang="pug">
 .parent-component
-  el-input(v-model="fatherInput", placeholder="请输入向子组件发送的消息")
+  el-input(v-model="fatherInput" placeholder="请输入向子组件发送的消息")
     template(slot="prepend") 向子组件发送消息
-    el-button(slot="append", icon="el-icon-d-arrow-right", @click="send")
-  son1(@speak="onSonSpeak", :father-msg="fatherMsg")
+    el-button(slot="append" icon="el-icon-d-arrow-right" @click="send")
+  son1(@speak="onSonSpeak" :father-msg="fatherMsg")
 </template>
 
 <script>

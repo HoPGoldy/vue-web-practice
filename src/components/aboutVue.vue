@@ -5,13 +5,13 @@
       .el-card
         margin-bottom 15px
 .card-title
-  font-size: 20px
-  font-weight: bolder
+  font-size 20px
+  font-weight bolder
 </style>
 
 <template lang="pug">
 .container
-  el-row(type="flex", justify="space-around")
+  el-row(type="flex" justify="space-around")
     el-col(:span="10")
       el-card(shadow="hover")
         .card-title(slot="header") 事件绑定
@@ -19,6 +19,9 @@
       el-card(shadow="hover")
         .card-title(slot="header") ajax请求
         sendAjax
+      el-card(shadow="hover")
+        .card-title(slot="header") 本地存储
+        LocalStorage
     el-col(:span="10")
       el-card(shadow="hover")
         .card-title(slot="header") 父子组件传值
@@ -33,9 +36,11 @@ import eventExample from './vueExample/event.vue'
 import sendAjax from './vueExample/sendAjax.vue'
 import bus from './vueExample/busExample.vue'
 import parent from './vueExample/communicate/parent.vue'
+import LocalStorage from './vueExample/LocalStorageExample.vue'
+
 export default {
   name: 'aboutVue',
-  components: { eventExample, parent, sendAjax, bus },
+  components: { eventExample, parent, sendAjax, bus, LocalStorage },
   data () {
     return {
     }

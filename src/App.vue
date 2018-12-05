@@ -29,19 +29,19 @@
 
 <template lang="pug">
   #app
-    img.logo(:class="{'is-hide': !showLogo}", src="./assets/logo.png")
-    el-tooltip(content="点此展开/收起logo", placement="bottom")
-      .title(@click="showLogo = !showLogo", :class="{'is-left': !showLogo}") {{title}}
-    el-tabs(v-model="activeName", @tab-click="showLogo = false")
-      el-tab-pane(label="细节", name="detail")
+    img.logo(:class="{'is-hide': !showLogo}" src="./assets/logo.png")
+    el-tooltip(content="点此展开/收起logo" placement="bottom")
+      .title(@click="showLogo = !showLogo" :class="{'is-left': !showLogo}") {{title}}
+    el-tabs(v-model="activeName" @tab-click="showLogo = false")
+      el-tab-pane(label="细节" name="detail")
         detail
-      el-tab-pane(label="表格", :lazy="true", name="chart")
+      el-tab-pane(label="表格" :lazy="true" name="chart")
         chart
-      el-tab-pane(label="Vue", name="vue")
+      el-tab-pane(label="Vue" name="vue")
         aboutVue
-      el-tab-pane(label="样式", name="stylus")
+      el-tab-pane(label="样式" name="stylus")
         istyle
-      el-tab-pane(label="地图", :lazy="true", name="imap")
+      el-tab-pane(label="地图" :lazy="true" name="imap")
         imap
 </template>
 
