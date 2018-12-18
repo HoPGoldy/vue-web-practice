@@ -10,7 +10,7 @@
 </style>
 
 <template lang="pug">
-.container 
+.container
   el-row(:gutter="10")
     el-col(:span="11")
       el-input(v-model="saveKey" placeholder="键名")
@@ -33,7 +33,7 @@ export default {
     }
   },
   methods: {
-    saveData() {
+    saveData () {
       if (!this.saveKey || !this.value) {
         this.$message({
           message: '请确保输入的键值不为空哦',
@@ -48,7 +48,7 @@ export default {
         type: 'success'
       })
     },
-    loadData() {
+    loadData () {
       console.log('load', this.loadKey)
       if (!this.loadKey) {
         this.$message({
@@ -57,13 +57,13 @@ export default {
         })
         return
       }
-      let value = JSON.parse(window.localStorage.getItem(this.loadKey)||'{}')
+      let value = JSON.parse(window.localStorage.getItem(this.loadKey) || '{}')
       this.$message({
         message: `成功！${this.loadKey}的值为${value}`,
         type: 'success'
       })
     },
-    removeData() {
+    removeData () {
       if (!this.loadKey) {
         this.$message({
           message: '请确保输入的键名不为空哦',

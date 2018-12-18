@@ -1,7 +1,7 @@
 <template lang="pug">
   .hello
     h2 前端技术栈
-    el-row(v-for="detailRow in detailInfo" type="flex" justify="center")
+    el-row(v-for="detailRow, index in detailInfo" :key="index" type="flex" justify="center")
       el-col(:span="4" v-for="item in detailRow" :key="item.url")
         div(class="detail-item")
           a(:href="item.url") {{item.content}}

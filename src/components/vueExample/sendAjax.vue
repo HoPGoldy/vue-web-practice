@@ -18,7 +18,7 @@ export default {
   name: 'sendAjax',
   data () {
     return {
-      urlInput: 'http://192.168.43.202:8080/spring-helloworld/home/test/',
+      urlInput: 'http://39.96.47.189:3001/',
       argInput: 'hello'
     }
   },
