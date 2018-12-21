@@ -13,3 +13,8 @@
 ## 展示
 
 ![效果图](./show.gif)
+
+## 其他
+
+- 详细说明 [前端项目技术栈总结](https://www.jianshu.com/p/fc5ad9b33a0f)
+- 在线演示 [前端实践演示](https://vue-practice.netlify.com/)
